@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background:linear-gradient(45deg,plum 50%,cornflowerblue); /* outer*/
+    color: #fff; /* White text */
+}
+
+.container {
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color:yellow; /* Spring Green */
+}
+
+.page {
+    display: none;
+    padding: 20px;
+    background-color:rgb(16, 14, 14); /* inner */
+    border-radius: 10px;
+}
+
+.page.active {
+    display: block;
+}
+
+.page-content {
+    background-color:blue; /* Light Cyan */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.gradient-title {
+    background-color:white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.gradient-text {
+    background-color: #deef7a;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(164, 231, 231);
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00CED1;
+}
+
+#saveButton {
+    background-color: aqua;
+}
+
+#saveButton:hover {
+    background-color: #00CED1;
+}
+
+#output img, #output video {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}

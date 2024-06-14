@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection Using YOLO</title>
+    <link rel="stylesheet" href="C:\Users\sksir\Downloads\finalproject\static\css\styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="page1" class="page active">
+            <div class="page-content">
+                <h1 class="gradient-title">OBJECT DETECTION USING YOLO</h1>
+                <p class="gradient-text">Select an option:</p>
+                <button onclick="selectOption('image')">Upload Image</button>
+                <button onclick="selectOption('video')">Upload Video</button>
+            </div>
+        </div>
+
+        <div id="page2" class="page">
+            <div class="page-content">
+                <h1 class="gradient-title">Upload your <span id="selected-option"></span></h1>
+                <input type="file" id="fileInput" accept="">
+                <button onclick="uploadFile()">Upload</button>
+                <button onclick="goBack(1)">Back</button>
+            </div>
+        </div>
+
+        <div id="page3" class="page">
+            <div class="page-content">
+                <h1 class="gradient-title">After object detection, the output is:</h1>
+                <div id="output"></div>
+                <button id="saveButton" onclick="saveFile()">Save</button>
+                <button onclick="goBack(2)">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="C:\Users\sksir\Downloads\finalproject\static\js\script.js"></script>
+</body>
+</html>
